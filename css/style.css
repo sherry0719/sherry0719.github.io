@@ -367,25 +367,56 @@ img {
     transform: rotate(-45deg);
   }
 }
-.bg_1 {
-  background-image: url(/img/bg_index_top.svg);
+.bg {
   position: absolute;
-  top: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
 }
 
+.bg_1 {
+  background-image: url(/img/bg_index_t_l.svg);
+  top: 0;
+}
+
 .bg_2 {
-  background-image: url(/img/bg_index_2.svg);
-  position: absolute;
-  top: 692px;
-  left: -332px;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+  background-image: url(/img/bg_index_top_r.svg);
+  right: 0;
+  top: 0;
+  width: 520px;
+  height: 1200px;
+}
+
+.bg_3 {
+  background-image: url(/img/bg_index_bottom.svg);
+  width: 256px;
+  height: 139px;
   background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 182px;
+}
+
+.bg_4 {
+  background-image: url(/img/bg_index_2.svg);
+  width: 764px;
+  height: 800px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -330px;
+  top: 692px;
+}
+
+.bg_5 {
+  background-image: url(/img/bg_index_item.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1990px;
+  right: -100px;
+  width: 282px;
+  height: 235px;
+  opacity: 30%;
 }
 
 .content_1 {
@@ -434,16 +465,46 @@ img {
   justify-content: center;
   align-items: center;
   margin: 90px 165px 90px 165px;
+  flex-direction: column;
 }
 .project a {
   width: 100%;
+  position: relative;
+  margin-bottom: 90px;
 }
-.project a img {
-  transform: scale(1, 1);
-  overflow: hidden;
-}
-.project a img :hover {
+.project a :hover {
   cursor: pointer;
-  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
-  transform: scale(1.2, 1.2);
+}
+.project img {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  border-radius: 12px;
+}
+.project .block {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.16;
+  display: none;
+}
+.project .project_link:hover .block {
+  display: flex;
+}
+
+footer {
+  background-color: #F0F1F2;
+  width: 100%;
+  height: 182px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 100px;
+  padding: 50px 150px;
+  flex-direction: column;
+}
+footer a {
+  padding: 15px;
+  color: #555657;
 }/*# sourceMappingURL=style.css.map */
