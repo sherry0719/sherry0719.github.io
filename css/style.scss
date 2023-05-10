@@ -565,10 +565,13 @@ img {
         background: #000;
         opacity: 0.16;
         display: none;
+        border-radius: 12px;
+
     }
 
     .project_link:hover .block {
         display: flex;
+        transition: .3s ease-in-out;
     }
 
 }
