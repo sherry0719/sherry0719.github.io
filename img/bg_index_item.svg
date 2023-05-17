@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="282" height="235" viewBox="0 0 282 235">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165" height="235" viewBox="0 0 165 235">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Rectangle_62611" data-name="Rectangle 62611" width="282" height="235" transform="translate(1755 3162)" fill="none"/>
+      <rect id="Rectangle_62611" data-name="Rectangle 62611" width="165" height="235" transform="translate(1755 3162)" fill="none"/>
     </clipPath>
     <clipPath id="clip-path-2">
       <rect id="Rectangle_62596" data-name="Rectangle 62596" width="233.28" height="233.04" transform="translate(48.72)" fill="none"/>
@@ -28,7 +28,7 @@
       <rect id="Rectangle_62607" data-name="Rectangle 62607" width="75" height="75" transform="translate(36.179 41.522)" fill="none"/>
     </clipPath>
   </defs>
-  <g id="bg_index_item" transform="translate(-1755 -3162)" clip-path="url(#clip-path)">
+  <g id="bg_index_item" transform="translate(-1755 -3162)" opacity="0.504" clip-path="url(#clip-path)">
     <g id="Group_126175" data-name="Group 126175" transform="translate(1755 3162)">
       <g id="Group_126174" data-name="Group 126174">
         <g id="Group_126173" data-name="Group 126173" clip-path="url(#clip-path-2)">
