@@ -270,8 +270,6 @@ img {
   flex-wrap: wrap;
   width: 100%;
   height: 80px;
-  padding-left: 26px;
-  padding-right: 26px;
   z-index: 50;
 }
 .header .header_logo {
@@ -478,6 +476,7 @@ img {
   align-items: center;
   margin: 90px 165px 90px 165px;
   flex-direction: column;
+  max-width: 1180px;
 }
 .project a {
   width: 100%;
@@ -567,8 +566,6 @@ footer a {
 
 .page_project {
   margin: auto;
-  padding-left: 26px;
-  padding-right: 26px;
 }
 
 .page_project {

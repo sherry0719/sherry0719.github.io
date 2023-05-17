@@ -285,8 +285,8 @@ img {
     flex-wrap: wrap;
     width: 100%;
     height: 80px;
-    padding-left: 26px;
-    padding-right: 26px;
+    // padding-left: 26px;
+    // padding-right: 26px;
     z-index: 50;
 
     .header_logo {
@@ -551,6 +551,7 @@ img {
     align-items: center;
     margin: 90px 165px 90px 165px;
     flex-direction: column;
+    max-width: 1180px;
 
     a {
         width: 100%;
@@ -656,11 +657,12 @@ footer {
 
 }
 
-.page_project{
- margin: auto;
- padding-left: 26px;
- padding-right: 26px;
-}   
+.page_project {
+    margin: auto;
+    // padding-left: 26px;
+    // padding-right: 26px;
+}
+
 // .introduce{
 //     margin-top: 250px;
 //     margin-left: -225px;
@@ -673,14 +675,15 @@ footer {
 //         margin-top: 0;
 //     }
 // }
-.page_project{
+.page_project {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 
     flex-direction: column;
-    img{
+
+    img {
         margin-top: 200px;
     }
 }
