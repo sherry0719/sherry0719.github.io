@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="209.957" height="68.589" viewBox="0 0 209.957 68.589">
+  <g id="img_about_title1" transform="translate(-966.043 -1370.704)">
+    <g id="icon_about-line" transform="translate(1065 1403.704)" fill="#ecf5fc" stroke="#fff" stroke-width="3">
+      <rect width="108" height="4" rx="2" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="111" height="7" rx="3.5" fill="none"/>
+    </g>
+    <g id="Group_127758" data-name="Group 127758">
+      <rect id="icon_about-title" width="60" height="37" rx="18.5" transform="translate(966.043 1413.131) rotate(-45)" fill="#fffbdb"/>
+      <text id="學歷" transform="translate(995 1412.705)" fill="#25689f" font-size="20" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="0" y="0">學歷</tspan></text>
+    </g>
+  </g>
+</svg>
