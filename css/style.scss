@@ -590,6 +590,7 @@ img {
         display: flex;
         transition: .3s ease-in-out;
     }
+
     a:last-child {
         margin-bottom: 0;
     }
@@ -732,12 +733,14 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 200px;
+
     ul li {
         color: #171819;
         font-size: 18px;
         line-height: 2em;
     }
-    img{
+
+    img {
         width: 750px;
         margin: auto auto 100px auto;
     }
@@ -752,26 +755,85 @@ footer {
         color: #171819;
         font-size: 18px;
         line-height: 2em;
+
         td {
             padding: 0 .6em;
         }
+
         td:first-child {
             padding-right: 1em;
         }
-        td:nth-child(3){
+
+        td:nth-child(3) {
             padding-left: 1em;
 
         }
     }
 }
 
-.page_graphic{
+.page_graphic {
     margin-top: 60px;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(2,1fr);
- img{
-    box-shadow:0 0 20px  rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
- }
+    grid-template-columns: repeat(2, 1fr);
+
+    img {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+    }
+}
+
+.project_introduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+    img {
+        margin: 0;
+    }
+}
+
+.page_contact {
+    margin-top: 20px;
+    background-image: url(/img/img_contact_form.svg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 810px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+h5{
+    color: #25689F;
+    font-size: 26px;
+    margin-bottom: 60px;
+}
+    form input {
+        height: 40px;
+        width: 440px;
+        margin: 10px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: 1px solid #D5D6D7;
+
+    }
+
+    form textarea {
+        height: 160px;
+        width: 440px;
+        margin: 10px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: 1px solid #D5D6D7;
+
+    }
+
+    .mailTo {
+        background-color: #33ACD6;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+    }
 }

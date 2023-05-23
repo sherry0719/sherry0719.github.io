@@ -655,4 +655,54 @@ footer a {
 .page_graphic img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
+}
+
+.project_introduce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.project_introduce img {
+  margin: 0;
+}
+
+.page_contact {
+  margin-top: 20px;
+  background-image: url(/img/img_contact_form.svg);
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 810px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.page_contact h5 {
+  color: #25689F;
+  font-size: 26px;
+  margin-bottom: 60px;
+}
+.page_contact form input {
+  height: 40px;
+  width: 440px;
+  margin: 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #D5D6D7;
+}
+.page_contact form textarea {
+  height: 160px;
+  width: 440px;
+  margin: 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #D5D6D7;
+}
+.page_contact .mailTo {
+  background-color: #33ACD6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */
