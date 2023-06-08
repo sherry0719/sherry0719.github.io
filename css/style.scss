@@ -322,6 +322,13 @@ img {
     a {
         padding: 30px 15px;
         color: #373839;
+
+        &:hover,
+        &.active {
+            color: #0098CC;
+            text-decoration: none;
+
+        }
     }
 }
 
@@ -610,6 +617,12 @@ footer {
     a {
         padding: 15px;
         color: #555657;
+
+        &:hover,
+        &.active {
+            color: #0098CC;
+            text-decoration: none;
+        }
     }
 }
 
@@ -683,6 +696,11 @@ footer {
 //         margin-top: 0;
 //     }
 // }
+.introduce {
+    width: 50%;
+    margin-right: 10%;
+}
+
 .page_project {
     display: flex;
     align-items: center;
@@ -694,6 +712,12 @@ footer {
     img {
         margin-top: 200px;
     }
+
+    img:first-child {
+        margin-top: 120px;
+
+    }
+
 }
 
 .about_title {
@@ -732,7 +756,7 @@ footer {
 .page_about {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 120px;
 
     ul li {
         color: #171819;
@@ -742,7 +766,7 @@ footer {
 
     img {
         width: 750px;
-        margin: auto auto 100px auto;
+        margin: auto;
     }
 }
 
@@ -777,9 +801,22 @@ footer {
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
 
-    img {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-        border-radius: 8px;
+    a {
+        border-radius: 12px;
+
+        &:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+            // box-shadow: 0 0px 20px rgba(247, 232, 95, 0.5);
+
+        }
+
+        img {
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+
+        }
     }
 }
 
@@ -805,11 +842,13 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-h5{
-    color: #25689F;
-    font-size: 26px;
-    margin-bottom: 60px;
-}
+
+    h5 {
+        color: #25689F;
+        font-size: 26px;
+        margin-bottom: 60px;
+    }
+
     form input {
         height: 40px;
         width: 440px;
@@ -829,6 +868,7 @@ h5{
         border: 1px solid #D5D6D7;
 
     }
+
     .mailTo {
         background-color: #33ACD6;
         color: #fff;

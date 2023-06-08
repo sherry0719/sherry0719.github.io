@@ -296,6 +296,10 @@ img {
   padding: 30px 15px;
   color: #373839;
 }
+.header_right a:hover, .header_right a.active {
+  color: #0098CC;
+  text-decoration: none;
+}
 
 .menu_input {
   display: none;
@@ -525,6 +529,10 @@ footer a {
   padding: 15px;
   color: #555657;
 }
+footer a:hover, footer a.active {
+  color: #0098CC;
+  text-decoration: none;
+}
 
 .btn_backtotop {
   width: 60px;
@@ -572,6 +580,11 @@ footer a {
   margin: auto;
 }
 
+.introduce {
+  width: 50%;
+  margin-right: 10%;
+}
+
 .page_project {
   display: flex;
   align-items: center;
@@ -581,6 +594,9 @@ footer a {
 }
 .page_project img {
   margin-top: 200px;
+}
+.page_project img:first-child {
+  margin-top: 120px;
 }
 
 .about_title {
@@ -614,7 +630,7 @@ footer a {
 .page_about {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  margin-top: 120px;
 }
 .page_about ul li {
   color: #171819;
@@ -623,7 +639,7 @@ footer a {
 }
 .page_about img {
   width: 750px;
-  margin: auto auto 100px auto;
+  margin: auto;
 }
 
 .about_content {
@@ -652,9 +668,18 @@ footer a {
   grid-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
 }
-.page_graphic img {
+.page_graphic a {
+  border-radius: 12px;
+}
+.page_graphic a:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
+}
+.page_graphic a img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
 }
 
 .project_introduce {
