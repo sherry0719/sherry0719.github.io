@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <filter id="img_menu_btn_bg" x="0" y="0" width="120" height="120" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#f7e85f"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#img_menu_btn_bg)">
+    <path id="img_menu_btn_bg-2" data-name="img_menu_btn_bg" d="M144.762,66.022a30,30,0,1,1-30-30,30,30,0,0,1,30,30" transform="translate(-54.76 -6.02)" fill="#fff"/>
+  </g>
+</svg>

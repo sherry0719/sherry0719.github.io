@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
 /////////////////////*清除預設樣式*/
 
 /* 清除內外邊距 */
@@ -22,7 +23,6 @@ li,
 pre,
 /* text formatting elements 文字格式元素 */
 fieldset,
-lengend,
 button,
 input,
 textarea,
@@ -42,8 +42,9 @@ select,
 textarea {
     /* for ie */
     font: 12px/1;
-    font-family: sans-serif, Tahoma, Helvetica, Arial;
+    font-family: 'Noto Sans', sans-serif, Tahoma, Helvetica, Arial;
     /* 用 ascii 字元表示，使得在任何編碼下都無問題 */
+    color: #373839;
 }
 
 h1 {
@@ -61,6 +62,7 @@ h2 {
 h3 {
     font-size: 28px;
     margin-bottom: 1.625rem;
+    letter-spacing: 1px;
 }
 
 h4 {
@@ -278,6 +280,13 @@ img {
     }
 }
 
+@media(max-width:768px) {
+    .container {
+        // max-width: calc(100% - 40px);
+        padding: 0 24px;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -290,6 +299,10 @@ img {
     // padding-bottom: 30px;
     // padding-left: 26px;
     // padding-right: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 
 
     .header_logo {
@@ -317,9 +330,9 @@ img {
     float: right;
     display: flex;
     // justify-content: flex-end;
-    padding: 27px 0;
+    // padding: 27px 0;
 
-    a {
+    .menu a {
         padding: 30px 15px;
         color: #373839;
 
@@ -339,15 +352,20 @@ img {
 .menu_icon {
     display: none;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     z-index: 5;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 20px #F7E85F;
+    background-color: #fff;
+    border-radius: 50%;
 
     span {
         display: block;
-        width: 20px;
+        width: 24px;
         height: 2px;
-        background-color: #fff;
+        background-color: #F8E52E;
         position: relative;
         transition: .3s ease-in-out;
 
@@ -355,12 +373,12 @@ img {
         &::after {
             content: "";
             display: block;
-            width: 20px;
+            width: 24px;
             height: 2px;
-            background-color: #fff;
+            background-color: #F8E52E;
             position: absolute;
             transform: rotate(0deg);
-            transform-origin: 3px 1px;
+            transform-origin: 5px 1px;
             transition: .3s ease-in-out
         }
 
@@ -375,15 +393,11 @@ img {
 }
 
 
-@media(max-width:767px) {
-    .header {
-        background-color: #fff;
+@media(max-width:768px) {
+    // .header {
+    // background-color: #fff;
 
-        // .header_logo {
-        //     background-image: url(http://fakeimg.pl/54x54/F0F1F2/?text=PJCHENder);
-
-        // }
-    }
+    // }
 
     .menu_icon {
         display: flex;
@@ -392,8 +406,7 @@ img {
 
     .menu {
         display: none;
-        background-color: #fff;
-        max-height: 80px;
+        // max-height: 80px;
         transition: .3s ease-in-out;
         transform: scaleY(0);
         transform-origin: 0 0;
@@ -404,19 +417,31 @@ img {
         display: inline-block;
         text-align: center;
         width: 100%;
-        max-height: 600px;
+        height: 700px;
+        // max-height: 600px;
         position: absolute;
         right: 0;
         left: 0;
         top: 0;
         // background-color: #fff;
         padding: 120px 0;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
         transform: scaleY(1);
+        background-image: url(/img/bg_menu.svg);
+        background-position-x: center;
+        background-position-y: -150px;
+        background-repeat: no-repeat;
 
         a {
             display: block;
             color: #555657;
+
+            &:hover,
+            &.active {
+                color: #0098CC;
+                text-decoration: none;
+
+            }
         }
     }
 
@@ -436,26 +461,6 @@ img {
 }
 
 
-// .bg_1 {
-//     background-image: url(/img/bg_index_top.svg);
-//     position: absolute;
-//     top: 0;
-//     z-index: -1;
-//     width: 100%;
-//     height: 100%;
-//     background-repeat: no-repeat;
-// }
-
-// .bg_2 {
-//     background-image: url(/img/bg_index_2.svg);
-//     position: absolute;
-//     top: 692px;
-//     left: -332px;
-//     z-index: -1;
-//     width: 100%;
-//     height: 100%;
-//     background-repeat: no-repeat;
-// }
 .bg {
     position: absolute;
     z-index: -1;
@@ -480,13 +485,14 @@ img {
 }
 
 .bg_3 {
-    background-image: url(/img/bg_index_bottom.svg);
+    // background-image: url(/img/bg_index_bottom.svg);
     width: 256px;
     height: 139px;
     background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    bottom: 182px;
+    // position: absolute;
+    // left: 0;
+    // bottom: 182px;
+    background: url(/img/bg_index_bottom.svg) 0% bottom;
 }
 
 .bg_4 {
@@ -516,11 +522,13 @@ img {
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // left: 0;
     flex-direction: column;
+    // background: url(/img/bg_index_bottom.svg) no-repeat 0 bottom;
+    // padding-bottom: 200px;
 
     ul {
         display: flex;
@@ -540,11 +548,10 @@ img {
 
 .arrow {
     position: absolute;
-    bottom: 0;
-    top: auto;
+    top: 100vh;
     right: 0;
     left: 0;
-    margin: 50px;
+    margin-top: -100px;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -560,14 +567,16 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 90px 165px 90px 165px;
+    // margin: 90px 165px 90px 165px;
     flex-direction: column;
     max-width: 1180px;
+    // padding: 20px;
 
     a {
         width: 100%;
         position: relative;
-        margin-bottom: 90px;
+        // margin-bottom: 90px;
+        margin-bottom: 10%;
 
         :hover {
             cursor: pointer;
@@ -613,6 +622,7 @@ footer {
     margin-top: 200px;
     padding: 50px 150px;
     flex-direction: column;
+    // background: url(/img/bg_index_bottom.svg) no-repeat 50% 50% / 50% 50% #F0F1F2;
 
     a {
         padding: 15px;
@@ -624,6 +634,11 @@ footer {
             text-decoration: none;
         }
     }
+
+    // &::before{
+    //     content: "";
+    //     background-image: url(/img/bg_index_3.svg);
+    // }
 }
 
 .btn_backtotop {
@@ -756,7 +771,7 @@ footer {
 .page_about {
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 200px;
 
     ul li {
         color: #171819;
@@ -796,7 +811,7 @@ footer {
 }
 
 .page_graphic {
-    margin-top: 60px;
+    margin-top: 120px;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
@@ -827,13 +842,31 @@ footer {
     margin-top: 200px;
     margin-bottom: 100px;
 
+    p {
+        white-space: pre-wrap;
+        letter-spacing: 1px;
+        color: #555657;
+    }
+
     img {
         margin: 0;
     }
 }
 
+@media(max-width: 960px) {
+    .project_introduce {
+        display: block;
+        text-align: center;
+
+        .introduce {
+            width: 70%;
+            margin: auto auto 10%;
+        }
+    }
+}
+
 .page_contact {
-    margin-top: 20px;
+    margin-top: 120px;
     background-image: url(/img/img_contact_form.svg);
     background-repeat: no-repeat;
     width: 800px;
@@ -876,3 +909,40 @@ footer {
         border-radius: 8px;
     }
 }
+
+
+////RWD
+@media(max-width:768px) {
+    .content_1 {
+        ul {
+            // width: calc(100% - 40px);
+            margin: auto;
+        }
+    }
+
+    .bg_2 {
+        width: 350px;
+    }
+}
+
+///設定footer
+.wrapper {
+    min-height: 100%;
+}
+
+.home_bg {
+    background: url(/img/bg_index_t_l.svg) no-repeat left top,
+        url(/img/bg_index_top_r.svg) no-repeat right top,
+        url(/img/bg_index_2.svg) no-repeat -330px center,
+        url(/img/bg_index_item.svg) no-repeat right 82%,
+        url(/img/bg_index_bottom.svg) no-repeat left bottom;
+    padding-bottom: 200px;
+
+}
+
+///手機版尺寸
+// @media(max-width: 414px){
+//     .container{
+//         max-width: ;
+//     }
+// }
