@@ -498,9 +498,10 @@ img {
   width: 100%;
   position: relative;
   margin-bottom: 10%;
+  border-radius: 12px;
 }
-.project a :hover {
-  cursor: pointer;
+.project a:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 }
 .project img {
   width: 100%;
@@ -518,10 +519,6 @@ img {
   display: none;
   border-radius: 12px;
 }
-.project .project_link:hover .block {
-  display: flex;
-  transition: 0.3s ease-in-out;
-}
 .project a:last-child {
   margin-bottom: 0;
 }
@@ -529,10 +526,9 @@ img {
 footer {
   background-color: #F0F1F2;
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  margin-top: 200px;
-  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 120px;
 }
 footer a {
   padding: 15px;
@@ -541,6 +537,10 @@ footer a {
 footer a:hover, footer a.active {
   color: #0098CC;
   text-decoration: none;
+}
+footer p {
+  color: #909293;
+  padding: 15px;
 }
 
 .btn_backtotop {
