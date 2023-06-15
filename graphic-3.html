@@ -8,14 +8,17 @@
     <title>Sherry'Portfolio</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="icon" href="img/icon_web.ico">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 </head>
 
 <body>
-    <div class="header" id="header">
-
-        <div class="header container">
-            <div class="header_left"><a href="/index.html" class="header_logo"></a>
+    <header>
+        <div class="header container header_shadow">
+            <div class="header_left">
+                <a href="/index.html" class="header_logo"></a>
+                <a href="/index.html" class="header_logo header_name"></a>
             </div>
 
             <div class="header_right">
@@ -23,15 +26,14 @@
                 <label for="menu_btn" class="menu_icon">
                     <span></span></label>
                 <div class="menu">
-                    <a href="/index.html#project">Project</a>
-                    <a href="/graphic.html">Graphic</a>
+                    <a href="index.html#project">Project</a>
+                    <!-- <a href="/graphic.html">Graphic</a> -->
                     <a href="/about.html">About</a>
                     <a href="/contact.html">Contact</a>
-
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <div class="container ">
         <div class="bg_blue"></div>
@@ -43,12 +45,13 @@
         </div>
 
 
+
     </div>
-   <footer>
+    <footer style="margin-top: 0;">
         <div class="container">
             <div class="">
-                <a href="#project">Project</a>
-                <a href="/graphic.html">Graphic</a>
+                <a href="index.html#project">Project</a>
+                <!-- <a href="/graphic.html">Graphic</a> -->
                 <a href="/about.html">About</a>
                 <a href="/contact.html">Contact</a>
             </div>
@@ -91,25 +94,44 @@
     </div>
     <script>
         //back to top
-        // Get the button
-        let mybutton = document.getElementById("back-to-top");
+        $(document).ready(function () {
+            // 捲軸偵測距離頂部超過 50 才顯示按鈕
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    if ($(".backtotop").hasClass("hide")) {
+                        $(".backtotop").toggleClass("hide");
+                    }
+                } else {
+                    $(".backtotop").addClass("hide");
+                }
+            });
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+            // 點擊按鈕回頂部
+            $(".backtotop").on("click", function (event) {
+                $("html, body").animate(
+                    {
+                        scrollTop: 0
+                    },
+                    500 // 回頂部時間為 500 毫秒
+                );
+            });
+        });
+    </script>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "flex";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+    <script>
+        //header
+        $(document).ready(function () {
+            // 捲軸偵測距離頂部超過 50 才顯示按鈕
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    if ($(".header").hasClass("header_shadow")) {
+                        $(".header").toggleClass("header_shadow");
+                    }
+                } else {
+                    $(".header").addClass("header_shadow");
+                }
+            });
+        });
     </script>
 
 

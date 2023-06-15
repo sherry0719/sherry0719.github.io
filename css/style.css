@@ -270,32 +270,51 @@ img {
     padding: 0 24px;
   }
 }
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 24px;
+  z-index: 1;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 100px;
   z-index: 50;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0 1px 24px rgba(0, 0, 0, 0.1);
 }
 .header .header_logo {
-  width: 300px;
-  height: 80px;
+  width: 52px;
+  height: 52px;
   margin: auto 0;
-  background-image: url(/img/img_logo.svg);
+  background-image: url(/img/icon_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+.header .header_name {
+  background-image: url(/img/icon_logo_sherry.svg);
+  width: 120px;
+  height: 16px;
+  margin: auto 16px;
+}
+.header .header_med {
+  display: none;
+}
+
+.header_shadow {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .header_left {
   float: left;
   display: flex;
-  padding: 13px 0;
 }
 
 .header_right {
@@ -318,8 +337,8 @@ img {
 .menu_icon {
   display: none;
   cursor: pointer;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   z-index: 5;
   align-items: center;
   justify-content: center;
@@ -493,6 +512,7 @@ img {
   align-items: center;
   flex-direction: column;
   max-width: 1180px;
+  padding-top: 100px;
 }
 .project a {
   width: 100%;
@@ -559,8 +579,8 @@ footer p {
 }
 .btn_backtotop .btn_backtotop_baby {
   position: fixed;
-  bottom: 4px;
-  right: 6px;
+  bottom: 6px;
+  right: 8px;
   z-index: -1;
   opacity: 0;
   pointer-events: none;
@@ -573,6 +593,11 @@ footer p {
 }
 .btn_backtotop:hover .btn_backtotop_baby {
   opacity: 0.7;
+}
+
+.hide {
+  opacity: 0;
+  filter: Alpha(opacity=0);
 }
 
 .bg_blue {
@@ -721,7 +746,8 @@ footer p {
   margin-top: 120px;
   background-image: url(/img/img_contact_form.svg);
   background-repeat: no-repeat;
-  width: 800px;
+  background-position: center;
+  width: 100%;
   height: 810px;
   display: flex;
   justify-content: center;
@@ -763,6 +789,19 @@ footer p {
   .bg_2 {
     width: 350px;
   }
+  .page_contact form input {
+    width: 330px;
+  }
+  .page_contact form textarea {
+    width: 330px;
+  }
+  .header .header_med {
+    background-repeat: no-repeat;
+    display: flex;
+    background-image: url(/img/icon_logo_sherry.svg);
+    width: 100%;
+    height: 100%;
+  }
 }
 .wrapper {
   min-height: 100%;
@@ -771,4 +810,5 @@ footer p {
 .home_bg {
   background: url(/img/bg_index_t_l.svg) no-repeat left top, url(/img/bg_index_top_r.svg) no-repeat right top, url(/img/bg_index_2.svg) no-repeat -330px center, url(/img/bg_index_item.svg) no-repeat right 82%, url(/img/bg_index_bottom.svg) no-repeat left bottom;
   padding-bottom: 200px;
+  margin-top: -80px;
 }/*# sourceMappingURL=style.css.map */
