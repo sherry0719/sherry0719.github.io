@@ -601,6 +601,7 @@ header {
     max-width: 1180px;
     // padding: 20px;
     padding-top: 100px;
+
     a {
         width: 100%;
         position: relative;
@@ -917,6 +918,11 @@ footer {
         color: #25689F;
         font-size: 26px;
         margin-bottom: 60px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
     }
 
     form input {

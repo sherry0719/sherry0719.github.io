@@ -759,6 +759,10 @@ footer p {
   font-size: 26px;
   margin-bottom: 60px;
 }
+.page_contact form {
+  display: flex;
+  flex-direction: column;
+}
 .page_contact form input {
   height: 40px;
   width: 440px;
