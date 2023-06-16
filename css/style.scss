@@ -291,7 +291,8 @@ header {
     position: sticky;
     top: 24px;
     z-index: 1;
-
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .header {
@@ -419,10 +420,6 @@ header {
 
 
 @media(max-width:768px) {
-    // .header {
-    // background-color: #fff;
-
-    // }
 
     .menu_icon {
         display: flex;
@@ -777,7 +774,7 @@ footer {
     font-size: 20px;
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 60px;
 
     &::before {
         background-image: url(/img/icon_about-title.svg);
@@ -808,12 +805,18 @@ footer {
 .page_about {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-
+    margin-top: 120px;
+tr{
+    border-bottom: 1px solid #555657;
+}
     ul li {
         color: #171819;
         font-size: 18px;
         line-height: 2em;
+        display: flex;
+        div{
+            padding: 10px 20px;
+        }
     }
 
     img {

@@ -275,6 +275,8 @@ header {
   position: sticky;
   top: 24px;
   z-index: 1;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header {
@@ -638,7 +640,7 @@ footer p {
   font-size: 20px;
   display: flex;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .about_title::before {
   background-image: url(/img/icon_about-title.svg);
@@ -664,12 +666,19 @@ footer p {
 .page_about {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  margin-top: 120px;
+}
+.page_about tr {
+  border-bottom: 1px solid #555657;
 }
 .page_about ul li {
   color: #171819;
   font-size: 18px;
   line-height: 2em;
+  display: flex;
+}
+.page_about ul li div {
+  padding: 10px 20px;
 }
 .page_about img {
   width: 750px;
