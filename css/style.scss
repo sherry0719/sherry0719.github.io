@@ -672,12 +672,10 @@ header {
 
         a {
             height: 100%;
-
-            &:first-child {
-                margin-right: 30px;
-            }
         }
-
+        .m-r{
+            margin-right: 30px;
+        }
     }
 
     // .project_link:hover .block {
@@ -1107,7 +1105,7 @@ footer {
             }
         }
 
-        .project_graphic a:first-child {
+        .project_graphic .m-r {
             margin-right: 10px;
 
         }

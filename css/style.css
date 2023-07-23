@@ -526,7 +526,7 @@ header {
 .project .project_graphic a {
   height: 100%;
 }
-.project .project_graphic a:first-child {
+.project .project_graphic .m-r {
   margin-right: 30px;
 }
 .project a:last-child {
@@ -845,7 +845,7 @@ footer p {
   .project .block .project_tag {
     font-size: 0.6em;
   }
-  .project .project_graphic a:first-child {
+  .project .project_graphic .m-r {
     margin-right: 10px;
   }
 }
