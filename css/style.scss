@@ -1067,6 +1067,21 @@ footer {
     .about_content {
         width: 90%;
     }
+    .project{
+        .block{
+            .project_name {
+                font-size: 1em;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 0px;
+
+            }
+            .project_tag {
+                font-size: .8em;
+            }
+        }
+    }
+ 
 }
 
 
