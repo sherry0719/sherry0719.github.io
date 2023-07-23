@@ -672,7 +672,12 @@ header {
 
         a {
             height: 100%;
+
+            &:first-child {
+                margin-right: 30px;
+            }
         }
+
     }
 
     // .project_link:hover .block {
@@ -1067,8 +1072,9 @@ footer {
     .about_content {
         width: 90%;
     }
-    .project{
-        .block{
+
+    .project {
+        .block {
             .project_name {
                 font-size: 1em;
                 text-align: center;
@@ -1076,14 +1082,38 @@ footer {
                 margin-bottom: 0px;
 
             }
+
             .project_tag {
                 font-size: .8em;
             }
         }
     }
- 
+
 }
 
+@media(max-width:414px) {
+    .project {
+        .block {
+            .project_name {
+                font-size: 0.8em;
+                text-align: center;
+                padding: 0px 10px 0px 10px;
+                margin-bottom: 0px;
+
+            }
+
+            .project_tag {
+                font-size: .6em;
+            }
+        }
+
+        .project_graphic a:first-child {
+            margin-right: 10px;
+
+        }
+    }
+
+}
 
 ///設定footer
 .wrapper {

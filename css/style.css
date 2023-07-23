@@ -526,6 +526,9 @@ header {
 .project .project_graphic a {
   height: 100%;
 }
+.project .project_graphic a:first-child {
+  margin-right: 30px;
+}
 .project a:last-child {
   margin-bottom: 0;
 }
@@ -830,6 +833,20 @@ footer p {
   }
   .project .block .project_tag {
     font-size: 0.8em;
+  }
+}
+@media (max-width: 414px) {
+  .project .block .project_name {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 0px;
+  }
+  .project .block .project_tag {
+    font-size: 0.6em;
+  }
+  .project .project_graphic a:first-child {
+    margin-right: 10px;
   }
 }
 .wrapper {
