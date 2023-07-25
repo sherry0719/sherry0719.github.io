@@ -9,8 +9,18 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="icon" href="./img/icon_web.ico">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script src="./js/style.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RBHNPMV0D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7RBHNPMV0D');
+</script>
+
 </head>
 
 <body>
@@ -42,7 +52,7 @@
             <img src="./img/content_US_live-1.png" style="margin-top: 0;" alt="">
             <img src="./img/content_US_live-2.png" style="margin-top: 0;" alt="">
             <img src="./img/content_US_live-3.png" style="margin-top: 0;" alt="">
-       
+
 
 
 
@@ -66,8 +76,8 @@
     </footer>
 
     <div class="backtotop">
-        <a  id="back-to-top" class="btn_backtotop"><svg xmlns="http://www.w3.org/2000/svg" width="27.031"
-                height="29.027" viewBox="0 0 27.031 29.027">
+        <a id="back-to-top" class="btn_backtotop"><svg xmlns="http://www.w3.org/2000/svg" width="27.031" height="29.027"
+                viewBox="0 0 27.031 29.027">
                 <path id="back_to_top" data-name="Union 525"
                     d="M15962.14,18283.654v-18.678l-7.169,7.164a2.342,2.342,0,0,1-3.312-3.312l11.17-11.17a2.349,2.349,0,0,1,3.317,0q.044.044.085.088l11.085,11.082a2.346,2.346,0,1,1-3.317,3.318l-7.169-7.172v18.68a2.345,2.345,0,1,1-4.689,0Z"
                     transform="translate(-15950.97 -18256.973)" fill="#f7e85f" opacity="0.797" />
@@ -96,47 +106,7 @@
 
         </a>
     </div>
-   <script>
-        //back to top
-        $(document).ready(function () {
-            // 捲軸偵測距離頂部超過 50 才顯示按鈕
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 50) {
-                    if ($(".backtotop").hasClass("hide")) {
-                        $(".backtotop").toggleClass("hide");
-                    }
-                } else {
-                    $(".backtotop").addClass("hide");
-                }
-            });
-
-            // 點擊按鈕回頂部
-            $(".backtotop").on("click", function (event) {
-                $("html, body").animate(
-                    {
-                        scrollTop: 0
-                    },
-                    500 // 回頂部時間為 500 毫秒
-                );
-            });
-        });
-    </script>
-
-    <script>
-        //header
-        $(document).ready(function () {
-            // 捲軸偵測距離頂部超過 50 才顯示按鈕
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 100) {
-                    if ($(".header").hasClass("header_shadow")) {
-                        $(".header").toggleClass("header_shadow");
-                    }
-                } else {
-                    $(".header").addClass("header_shadow");
-                }
-            });
-        });
-    </script>
+   
 
 
 </body>

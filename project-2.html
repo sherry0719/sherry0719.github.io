@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="icon" href="img/icon_web.ico">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script src="./js/style.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RBHNPMV0D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7RBHNPMV0D');
+</script>
     
 </head>
 
@@ -94,47 +104,7 @@
         </div>
     </div>
 
-   <script>
-        //back to top
-        $(document).ready(function () {
-            // 捲軸偵測距離頂部超過 50 才顯示按鈕
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 50) {
-                    if ($(".backtotop").hasClass("hide")) {
-                        $(".backtotop").toggleClass("hide");
-                    }
-                } else {
-                    $(".backtotop").addClass("hide");
-                }
-            });
-
-            // 點擊按鈕回頂部
-            $(".backtotop").on("click", function (event) {
-                $("html, body").animate(
-                    {
-                        scrollTop: 0
-                    },
-                    500 // 回頂部時間為 500 毫秒
-                );
-            });
-        });
-    </script>
-
-    <script>
-        //header
-        $(document).ready(function () {
-            // 捲軸偵測距離頂部超過 50 才顯示按鈕
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 100) {
-                    if ($(".header").hasClass("header_shadow")) {
-                        $(".header").toggleClass("header_shadow");
-                    }
-                } else {
-                    $(".header").addClass("header_shadow");
-                }
-            });
-        });
-    </script>
+   
 
 </body>
 
