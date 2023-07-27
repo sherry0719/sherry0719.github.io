@@ -505,7 +505,7 @@ header {
 .project a {
   width: 100%;
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 30px;
   border-radius: 12px;
 }
 .project a:hover {
@@ -522,6 +522,7 @@ header {
 }
 .project .project_graphic {
   display: flex;
+  width: 100%;
 }
 .project .project_graphic a {
   height: 100%;
@@ -847,6 +848,9 @@ footer p {
   }
   .project .project_graphic .m-r {
     margin-right: 10px;
+  }
+  .project a {
+    margin-bottom: 10px;
   }
 }
 .wrapper {

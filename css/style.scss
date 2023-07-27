@@ -646,7 +646,7 @@ header {
         width: 100%;
         position: relative;
         // margin-bottom: 90px;
-        margin-bottom: 10%;
+        margin-bottom: 30px;
 
         border-radius: 12px;
 
@@ -669,6 +669,7 @@ header {
 
     .project_graphic {
         display: flex;
+        width: 100%;
 
         a {
             height: 100%;
@@ -1109,6 +1110,9 @@ footer {
             margin-right: 10px;
 
         }
+        a{
+            margin-bottom: 10px;
+        }
     }
 
 }
@@ -1128,9 +1132,3 @@ footer {
     margin-top: -80px;
 }
 
-///手機版尺寸
-// @media(max-width: 414px){
-//     .container{
-//         max-width: ;
-//     }
-// }
