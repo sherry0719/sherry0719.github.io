@@ -1,190 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sherry's Portfolio</title>
-    <meta property="og:image" content="https://sherry0719.github.io/img/og%20img.jpg" />
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="icon" href="img/icon_web.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta
+      property="og:image"
+      content="https://sherry0719.github.io/img/og%20img.jpg"
+    />
+    <link rel="icon" href="img/icon_web.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-       <script src="./js/style.js"></script>
+    <script src="./js/style.js"></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RBHNPMV0D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7RBHNPMV0D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-7RBHNPMV0D');
-</script>
+      gtag("config", "G-7RBHNPMV0D");
+    </script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RBHNPMV0D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7RBHNPMV0D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-7RBHNPMV0D');
-</script>
-</head>
+      gtag("config", "G-7RBHNPMV0D");
+    </script>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="header container header_shadow">
-            <div class="header_left">
-                <a href="./index.html" class="header_logo"></a>
-                <a href="./index.html" class="header_logo header_name"></a>
-            </div>
-
-            <div class="header_right">
-                <input type="checkbox" class="menu_input" id="menu_btn">
-                <label for="menu_btn" class="menu_icon">
-                    <span></span></label>
-                <div class="menu">
-                    <a href="index.html#project">Project</a>
-                    <!-- <a href="./graphic.html">Graphic</a> -->
-                    <a href="./about.html">About</a>
-                    <a href="./contact.html">Contact</a>
-                </div>
-            </div>
+      <div class="header container header_shadow">
+        <div class="header_left">
+          <a href="./index.html" class="header_logo"></a>
+          <a href="./index.html" class="header_logo header_name"></a>
         </div>
+
+        <div class="header_right">
+          <input type="checkbox" class="menu_input" id="menu_btn" />
+          <label for="menu_btn" class="menu_icon"> <span></span></label>
+          <div class="menu">
+            <a href="index.html#project">Project</a>
+            <!-- <a href="./graphic.html">Graphic</a> -->
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
     </header>
     <div class="home_bg">
-        <div class="container content_1">
-            <ul>
-                <li> <img src="./img/img-SherryHuang.png" alt=""></li>
-                <li>
-                    <p>Ui designer</p>
-                </li>
-            </ul>
-            <div class="arrow"><a href="#project" class=""><img src="./img/icon_arrow.svg" alt="">
-                </a>
-            </div>
-            <div id="project" class="project">
-                <a href="../dashboard.html" class="project_link"><img src="./img/img_TG dashdoard.png" alt="">
-                    <div class="block">
-                        <div class="project_name">後台管理系統</div>
-                        <div class="project_tag">Web Design</div>
-                    </div>
-                </a>
-                <a href="../project-5.html" class="project_link"><img src="./img/img_tg_web.png" alt="">
-                    <div class="block">
-                        <div class="project_name">線上遊樂平台</div>
-                        <div class="project_tag">Web Design</div>
-                    </div>
-                </a>
-                <a href="../US_live.html" class="project_link"><img src="./img/img_US_live.png" alt="">
-                    <div class="block">
-                        <div class="project_name">體育賽事直播平台</div>
-                        <div class="project_tag">Web Design</div>
-                    </div>
-                </a>
-
-                <a href="../project-3.html" class="project_link"><img src="./img/img_project 3.png" alt="">
-                    <div class="block">
-                        <div class="project_name">鐵木真金屬形象網站</div>
-                        <div class="project_tag">Web Design</div>
-                    </div>
-                </a>
-                <a href="../project-4.html" class="project_link"><img src="./img/img_project 4.png" alt="">
-                    <div class="block">
-                        <div class="project_name">淡然有味茶文化會館</div>
-                        <div class="project_tag">Web Design</div>
-                    </div>
-                </a>
-                <div class="project_graphic">
-                    <a href="../graphic-1.html" class="project_link m-r"><img src="./img/EBS_brochure.png" alt="">
-                        <div class="block">
-                            <div class="project_name">過敏與檢測報告</div>
-                            <div class="project_tag">Catalog Design</div>
-                        </div>
-                    </a>
-                    <a href="../graphic-5.html" class="project_link"><img src="./img/img_graphic_5.png" alt="">
-                        <div class="block">
-                            <div class="project_name">岱宇國際SOLE FITNESS</div>
-                            <div class="project_tag">Catalog Design</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="project_graphic">
-                    <a href="../graphic-4.html" class="project_link m-r"><img src="./img/img_graphic_4.png" alt="">
-                        <div class="block">
-                            <div class="project_name">各式活動banner</div>
-                            <div class="project_tag">Banner Design</div>
-                        </div>
-                    </a>
-                    <a href="../graphic-6.html" class="project_link"><img src="./img/img_graphic_6.png" alt="">
-                        <div class="block">
-                            <div class="project_name">資策會 VZ TAIWAN資料夾</div>
-                            <div class="project_tag">Graphic Design</div>
-                        </div>
-                    </a>
-                </div>
-
-
-            </div>
-
+      <section class="container main-container">
+        <div class="main-title">
+          <div class="col-6">
+            <h1>Hi, I'm Sherry.</h1>
+            <h5>專注於視覺與體驗的<span>UI/UX設計師</span></h5>
+          </div>
+          <div class="col-6"></div>
+         
         </div>
+        <a href="#project" class="d-flex justify-content-center"
+        ><img src="./img/icon_arrow.svg" alt="" />
+      </a>
+      </section>
 
+      <div class="container content_1">
+        <!-- <ul>
+          <li>
+            <img class="img-name" src="./img/img-SherryHuang.png" alt="" />
+          </li>
+          <li>
+            <p>Ui designer</p>
+          </li>
+        </ul>
+        <div class="arrow">
+          <a href="#project" class=""
+            ><img src="./img/icon_arrow.svg" alt="" />
+          </a>
+        </div> -->
+        <div id="project" class="project">
+          <a href="../dashboard.html" class="project_link"
+            ><img src="./img/img_TG dashdoard.png" alt="" />
+            <div class="block">
+              <div class="project_name">後台管理系統</div>
+              <div class="project_tag">Web Design</div>
+            </div>
+          </a>
+          <a href="../project-5.html" class="project_link"
+            ><img src="./img/img_tg_web.png" alt="" />
+            <div class="block">
+              <div class="project_name">線上遊樂平台</div>
+              <div class="project_tag">Web Design</div>
+            </div>
+          </a>
+          <a href="../US_live.html" class="project_link"
+            ><img src="./img/img_US_live.png" alt="" />
+            <div class="block">
+              <div class="project_name">體育賽事直播平台</div>
+              <div class="project_tag">Web Design</div>
+            </div>
+          </a>
 
-
+          <a href="../project-3.html" class="project_link"
+            ><img src="./img/img_project 3.png" alt="" />
+            <div class="block">
+              <div class="project_name">鐵木真金屬形象網站</div>
+              <div class="project_tag">Web Design</div>
+            </div>
+          </a>
+          <a href="../project-4.html" class="project_link"
+            ><img src="./img/img_project 4.png" alt="" />
+            <div class="block">
+              <div class="project_name">淡然有味茶文化會館</div>
+              <div class="project_tag">Web Design</div>
+            </div>
+          </a>
+          <div class="project_graphic">
+            <a href="../graphic-1.html" class="project_link m-r"
+              ><img src="./img/EBS_brochure.png" alt="" />
+              <div class="block">
+                <div class="project_name">過敏與檢測報告</div>
+                <div class="project_tag">Catalog Design</div>
+              </div>
+            </a>
+            <a href="../graphic-5.html" class="project_link"
+              ><img src="./img/img_graphic_5.png" alt="" />
+              <div class="block">
+                <div class="project_name">岱宇國際SOLE FITNESS</div>
+                <div class="project_tag">Catalog Design</div>
+              </div>
+            </a>
+          </div>
+          <div class="project_graphic">
+            <a href="../graphic-4.html" class="project_link m-r"
+              ><img src="./img/img_graphic_4.png" alt="" />
+              <div class="block">
+                <div class="project_name">各式活動banner</div>
+                <div class="project_tag">Banner Design</div>
+              </div>
+            </a>
+            <a href="../graphic-6.html" class="project_link"
+              ><img src="./img/img_graphic_6.png" alt="" />
+              <div class="block">
+                <div class="project_name">資策會 VZ TAIWAN資料夾</div>
+                <div class="project_tag">Graphic Design</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer style="margin-top: 0;">
-        <div class="container">
-            <div class="">
-                <a href="index.html#project">Project</a>
-                <!-- <a href="./graphic.html">Graphic</a> -->
-                <a href="./about.html">About</a>
-                <a href="./contact.html">Contact</a>
-            </div>
-            <p>©sherry huang
-            </p>
+    <footer style="margin-top: 0">
+      <div class="container">
+        <div class="">
+          <a href="index.html#project">Project</a>
+          <!-- <a href="./graphic.html">Graphic</a> -->
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
         </div>
+        <p>©sherry huang</p>
+      </div>
     </footer>
 
     <div class="backtotop">
-        <div id="back-to-top" class="btn_backtotop"><svg xmlns="http://www.w3.org/2000/svg" width="27.031"
-                height="29.027" viewBox="0 0 27.031 29.027">
-                <path id="back_to_top" data-name="Union 525"
-                    d="M15962.14,18283.654v-18.678l-7.169,7.164a2.342,2.342,0,0,1-3.312-3.312l11.17-11.17a2.349,2.349,0,0,1,3.317,0q.044.044.085.088l11.085,11.082a2.346,2.346,0,1,1-3.317,3.318l-7.169-7.172v18.68a2.345,2.345,0,1,1-4.689,0Z"
-                    transform="translate(-15950.97 -18256.973)" fill="#f7e85f" opacity="0.797" />
-            </svg>
-            <div class="btn_backtotop_baby"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="113.062" height="120.311"
-                    viewBox="0 0 113.062 120.311">
-                    <defs>
-                        <filter id="backtotop_baby" x="0" y="0" width="113.062" height="120.311"
-                            filterUnits="userSpaceOnUse">
-                            <feOffset input="SourceAlpha" />
-                            <feGaussianBlur stdDeviation="10" result="blur" />
-                            <feFlood flood-color="#f7e85f" />
-                            <feComposite operator="in" in2="blur" />
-                            <feComposite in="SourceGraphic" />
-                        </filter>
-                    </defs>
-                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#backtotop_baby)">
-                        <path id="backtotop_baby-2" data-name="Subtraction 228"
-                            d="M15992,18323a29.866,29.866,0,0,1-20.7-8.283,30,30,0,0,0,29.388-50.439A30,30,0,0,1,15992,18323Z"
-                            transform="translate(-15939.44 -18233.19)" fill="#fff" stroke="rgba(0,0,0,0)"
-                            stroke-miterlimit="10" stroke-width="1" />
-                    </g>
-                </svg>
-            </div>
-
+      <div id="back-to-top" class="btn_backtotop">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="27.031"
+          height="29.027"
+          viewBox="0 0 27.031 29.027"
+        >
+          <path
+            id="back_to_top"
+            data-name="Union 525"
+            d="M15962.14,18283.654v-18.678l-7.169,7.164a2.342,2.342,0,0,1-3.312-3.312l11.17-11.17a2.349,2.349,0,0,1,3.317,0q.044.044.085.088l11.085,11.082a2.346,2.346,0,1,1-3.317,3.318l-7.169-7.172v18.68a2.345,2.345,0,1,1-4.689,0Z"
+            transform="translate(-15950.97 -18256.973)"
+            fill="#f7e85f"
+            opacity="0.797"
+          />
+        </svg>
+        <div class="btn_backtotop_baby">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="113.062"
+            height="120.311"
+            viewBox="0 0 113.062 120.311"
+          >
+            <defs>
+              <filter
+                id="backtotop_baby"
+                x="0"
+                y="0"
+                width="113.062"
+                height="120.311"
+                filterUnits="userSpaceOnUse"
+              >
+                <feOffset input="SourceAlpha" />
+                <feGaussianBlur stdDeviation="10" result="blur" />
+                <feFlood flood-color="#f7e85f" />
+                <feComposite operator="in" in2="blur" />
+                <feComposite in="SourceGraphic" />
+              </filter>
+            </defs>
+            <g
+              transform="matrix(1, 0, 0, 1, 0, 0)"
+              filter="url(#backtotop_baby)"
+            >
+              <path
+                id="backtotop_baby-2"
+                data-name="Subtraction 228"
+                d="M15992,18323a29.866,29.866,0,0,1-20.7-8.283,30,30,0,0,0,29.388-50.439A30,30,0,0,1,15992,18323Z"
+                transform="translate(-15939.44 -18233.19)"
+                fill="#fff"
+                stroke="rgba(0,0,0,0)"
+                stroke-miterlimit="10"
+                stroke-width="1"
+              />
+            </g>
+          </svg>
         </div>
+      </div>
     </div>
-   
-
-
-
-</body>
-
-
+  </body>
 </html>
